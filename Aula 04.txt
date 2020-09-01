@@ -1,0 +1,13 @@
+Comandos
+
+ls
+clear
+touch (criar arquivos)
+git status
+git add .
+git reset .
+git config user.name
+git config user.email
+git commit -m "mensagem"
+
+
