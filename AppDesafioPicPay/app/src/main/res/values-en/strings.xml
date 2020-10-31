@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="Card_number">Número do cartão</string>
+    <string name="Card_Save">Salvar</string>
+    <string name="Help_Card_number">Digite o número do seu cartão</string>
+</resources>

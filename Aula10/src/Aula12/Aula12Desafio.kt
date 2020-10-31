@@ -39,20 +39,24 @@ class Livraria(
     fun cadastrarLivro(livro:Livro){
         livro.codigo = itemAtual
         todos.add(livro)
-        if (livro.estadoAtual == "disponivel") {disponiveis.add(livro)}
-        else if (livro.estadoAtual == "alugado") {alugados.add(livro)}
-        else if (livro.estadoAtual == "vendido") {vendidos.add(livro)}
-        else {indisponiveis.add(livro)}
+        when (livro.estadoAtual) {
+            "disponivel" -> {disponiveis.add(livro)}
+            "alugado" -> {alugados.add(livro)}
+            "vendido" -> {vendidos.add(livro)}
+            else -> {indisponiveis.add(livro)}
+        }
         println("Livro ${livro.titulo} cadastrado com sucesso.")
         itemAtual ++
     }
     fun cadastrarColecao(colecao:Colecao){
         colecao.codigo = itemAtual
         todos.add(colecao)
-        if (colecao.estadoAtual == "disponivel") {disponiveis.add(colecao)}
-        else if (colecao.estadoAtual == "alugado") {alugados.add(colecao)}
-        else if (colecao.estadoAtual == "vendido") {vendidos.add(colecao)}
-        else {indisponiveis.add(colecao)}
+        when (colecao.estadoAtual) {
+            "disponivel" -> {disponiveis.add(colecao)}
+            "alugado" -> {alugados.add(colecao)}
+            "vendido" -> {vendidos.add(colecao)}
+            else -> {indisponiveis.add(colecao)}
+        }
         println("Coleção ${colecao.titulo} cadastrada com sucesso.")
         itemAtual ++
     }
@@ -75,7 +79,7 @@ class Livraria(
         disponiveis.remove(livro)
         alugados.add(livro)
         livro.estadoAtual = "alugado"
-        var novamovimentacao = Movimentacao("Aluguel",LocalDate.now())
+        val novamovimentacao = Movimentacao("Aluguel",LocalDate.now())
         cliente.historico.add(novamovimentacao)
         if (funcionario != null) {
             funcionario.historico.add(novamovimentacao)
@@ -88,7 +92,7 @@ class Livraria(
         disponiveis.remove(livro)
         vendidos.add(livro)
         livro.estadoAtual = "vendido"
-        var novamovimentacao = Movimentacao("Venda",LocalDate.now())
+        val novamovimentacao = Movimentacao("Venda",LocalDate.now())
         cliente.historico.add(novamovimentacao)
         if (funcionario != null) {
             funcionario.historico.add(novamovimentacao)
@@ -199,14 +203,14 @@ class Funcionario(
     }
 }
 fun main(){
-    var livraria01 = Livraria("Livraria Bolso Vazio Mente Cheia",LocalDate.now())
-    var livro01 = Livro("O Livro Sem História", mutableSetOf("João Sem nome", "Maria sem sobrenome"), 2002,30.0,3.0,"disponível")
-    var livro02 = Livro("A História Sem Livro", mutableSetOf("João Sem nome"), 2012,35.0,2.0,"alugado")
-    var livro03 = Livro("A Coleção de Muitos Livros 01", mutableSetOf("Lombeiro Montato"), 2002,30.0,3.0,"disponível")
-    var livro04 = Livro("A Coleção de Muitos Livros 02", mutableSetOf("Lombeiro Montato"), 2002,35.0,3.0,"disponível")
-    var colecao01 = Colecao("A Coleção de Muitos Livros",anoDeLancamento = 2005,listaDeTitulos = mutableListOf(livro03,livro04), estadoAtual = "disponível")
-    var funcionario01 = Funcionario("Barnabé","15.123.223-6")
-    var cliente01 = Cliente("Chico","42.678.114-4")
+    val livraria01 = Livraria("Livraria Bolso Vazio Mente Cheia",LocalDate.now())
+    val livro01 = Livro("O Livro Sem História", mutableSetOf("João Sem nome", "Maria sem sobrenome"), 2002,30.0,3.0,"disponível")
+    val livro02 = Livro("A História Sem Livro", mutableSetOf("João Sem nome"), 2012,35.0,2.0,"alugado")
+    val livro03 = Livro("A Coleção de Muitos Livros 01", mutableSetOf("Lombeiro Montato"), 2002,30.0,3.0,"disponível")
+    val livro04 = Livro("A Coleção de Muitos Livros 02", mutableSetOf("Lombeiro Montato"), 2002,35.0,3.0,"disponível")
+    val colecao01 = Colecao("A Coleção de Muitos Livros",anoDeLancamento = 2005,listaDeTitulos = mutableListOf(livro03,livro04), estadoAtual = "disponível")
+    val funcionario01 = Funcionario("Barnabé","15.123.223-6")
+    val cliente01 = Cliente("Chico","42.678.114-4")
     println()
     println("Testes de cadastro:")
     livraria01.cadastrarLivro(livro01)
