@@ -32,12 +32,12 @@ class SocioFragment : Fragment() {
                     "O novo sócio é ${it.nome}\ncom e-mail ${it.email}\ne o telefone ${it.telefone}"
             })
         }
-        activity?.findViewById<TextView>(R.id.nomeSocio)?.text = "Jurubeba"
+        //activity?.findViewById<TextView>(R.id.nomeSocio)?.text = "Jurubeba"
 //        val nomeSocio = arguments?.getString("socio")
     }
 
     override fun onResume() {
         super.onResume()
-        activity?.findViewById<TextView>(R.id.nomeSocio)?.text = "w23232"
+       // activity?.findViewById<TextView>(R.id.nomeSocio)?.text = "w23232"
     }
 }

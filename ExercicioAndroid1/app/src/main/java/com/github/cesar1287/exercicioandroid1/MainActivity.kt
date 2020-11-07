@@ -2,23 +2,29 @@ package com.github.cesar1287.exercicioandroid1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.viewpager.widget.ViewPager
+import com.github.cesar1287.exercicioandroid1.model.RegisterAdapter
 import com.google.android.material.tabs.TabLayout
 
-class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
+class MainActivity : AppCompatActivity() {
 
-    private lateinit var tabLayout: TabLayout
+    private val tabLayout by lazy {
+        findViewById<TabLayout>(R.id.tabLayout)
+    }
+    private val viewpager by lazy {
+        findViewById<ViewPager>(R.id.viewPager)
+    }
     private lateinit var viewModel: MainViewModel
-
-    //private var nomeSocio = ""
-
-    //fragment A para o Fragment B
-    //fragment A serializar Socio -> Fragment B deserializar Socio
+    private val socioFragment = SocioFragment()
+    private val naosocioFragment = NaoSocioFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
 
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
@@ -26,44 +32,22 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
     }
 
     private fun initComponents() {
-        callFragment(NaoSocioFragment())
 
-        tabLayout = findViewById(R.id.tabLayout)
+        viewpager.adapter = RegisterAdapter(listOf(
+            getString(R.string.nao_socio),
+            getString(R.string.socio),
 
-        tabLayout.addOnTabSelectedListener(this)
+        ), listOf(
+            naosocioFragment,
+            socioFragment,
 
-//        viewModel.socioAtualizado.observe(this, {
-//            nomeSocio = it
-//        })
-    }
+        ),supportFragmentManager)
 
-    private fun callFragment(fragment: Fragment) {
-        val ft = supportFragmentManager.beginTransaction()
-
-//        val bundle = Bundle()
-//        bundle.putString("socio", nomeSocio)
-//        fragment.arguments = bundle
-
-        ft.replace(R.id.container, fragment)
-        ft.commit()
-    }
-
-    override fun onTabSelected(tab: TabLayout.Tab?) {
-        when (tab?.position) {
-            0 -> {
-                callFragment(NaoSocioFragment())
+        tabLayout.setupWithViewPager(viewpager)
+        viewModel.onDataSaved.observe(this, Observer {
+            if (it == true) {
+                tabLayout.getTabAt(1)?.select()
             }
-            1 -> {
-                callFragment(SocioFragment())
-            }
-        }
-    }
-
-    override fun onTabUnselected(tab: TabLayout.Tab?) {
-        /** não uso */
-    }
-
-    override fun onTabReselected(tab: TabLayout.Tab?) {
-        /** não uso */
+        })
     }
 }
