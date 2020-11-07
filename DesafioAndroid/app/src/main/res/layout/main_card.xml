@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/main_card"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            tools:src="@drawable/frango_frito"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/mc_RestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mc_title"
+            android:layout_marginStart="@dimen/mc_textstartmargin"
+            tools:text="Tony Roma's"
+            android:textSize="36sp"/>
+        <TextView
+            android:id="@+id/mc_RestAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mc_details"
+            android:layout_marginStart="@dimen/mc_textstartmargin"
+            tools:text="Av. Lavandisca, 717 - Indianópolis, São Paulo"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/mc_RestHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/mc_details"
+            android:layout_marginBottom="@dimen/mc_textstartmargin"
+            tools:text="Fecha às 22:00"
+            android:textSize="16sp"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
