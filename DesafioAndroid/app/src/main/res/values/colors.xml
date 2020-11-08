@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mc_title">#FF1F2D3D</color>
     <color name="mc_details">#FF8492A6</color>
+    <color name="rd_graytext">#5A6978</color>
 </resources>

@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">DesafioAndroid</string>
+    <string name="app_name">Digital House Foods</string>
+    <string name="mc_hour">Fecha às %1$s</string>
+    <string name="rd_principaldishes">Pratos principais</string>
 </resources>
