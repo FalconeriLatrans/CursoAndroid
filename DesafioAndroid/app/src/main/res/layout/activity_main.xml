@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".view.activity.MainActivity"
     android:background="#DDDDDD">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="vertical"
-        tools:listitem="@layout/main_card"
+        tools:listitem="@layout/card_restaurant"
         tools:itemCount="3"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

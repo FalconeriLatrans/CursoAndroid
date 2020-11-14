@@ -1,4 +1,4 @@
-package com.example.desafioandroid
+package com.example.desafioandroid.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

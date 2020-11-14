@@ -7,10 +7,4 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mc_title">#FF1F2D3D</color>
-    <color name="mc_details">#FF8492A6</color>
-    <color name="rd_graytext">#5A6978</color>
-    <color name="lg_graytext">#8492A6</color>
-    <color name="lg_purpletext">#3F51B5</color>
-    <color name="red_button">#FF5252</color>
 </resources>

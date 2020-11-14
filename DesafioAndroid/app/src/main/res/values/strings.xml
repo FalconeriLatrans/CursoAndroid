@@ -2,4 +2,15 @@
     <string name="app_name">Digital House Foods</string>
     <string name="mc_hour">Fecha às %1$s</string>
     <string name="rd_principaldishes">Pratos principais</string>
+    <string name="dish_description">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">REGISTER</string>
+    <string name="or">OR</string>
+    <string name="log_in">LOG IN</string>
+    <string name="email">Email</string>
+    <string name="error_empty_field">Field can\'t be empty</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_password_check">Invalid password confirmation</string>
 </resources>
