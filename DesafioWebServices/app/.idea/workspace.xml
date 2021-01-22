@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8be32b2-8f47-4375-a3e7-c02392304331" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Android Kotlin - Grade Santander.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AndroidStudio/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AndroidStudio/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/java/com/example/appdesafiopicpay/BlankFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/java/com/example/appdesafiopicpay/BlankFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/java/com/example/appdesafiopicpay/CardPrimingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/java/com/example/appdesafiopicpay/CardPrimingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/java/com/example/appdesafiopicpay/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/java/com/example/appdesafiopicpay/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppDesafioPicPay/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/androidTest/java/com/example/colearning10nov/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/java/com/example/colearning10nov/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/app/src/test/java/com/example/colearning10nov/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Colearning10Nov/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Colearning10Nov/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExercicioAula27/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExercicioAula27/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExercicioAula27/app/src/main/res/drawable/ic_untitled__1_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExercicioAula27/app/src/main/res/drawable/ic_untitled__1_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MaterialDesign/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MaterialDesign/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MaterialDesign/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MaterialDesign/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1kvRxBKEobRdQ7yjiTRUUHL8hnu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8be32b2-8f47-4375-a3e7-c02392304331" name="Default Changelist" comment="" />
+      <created>1606579322240</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606579322240</updated>
+    </task>
+    <servers />
+  </component>
+</project>
