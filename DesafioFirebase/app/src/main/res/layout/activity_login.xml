@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_grayBg"
+    tools:context=".view.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_text_box"
+        android:backgroundTint="@color/theme_red"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_text_box"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lg_email"
+                style="@style/lg_textInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/lg_textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    tools:text="dh@digitalhouse.com" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lg_password"
+                style="@style/lg_textInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/lg_textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    tools:text="dh@digitalhouse.com" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/lg_passwordRemember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/theme_red"
+                android:checked="true"
+                android:text="@string/lg_remember" />
+
+            <Button
+                android:id="@+id/lg_login"
+                style="@style/button_std"
+                android:layout_marginTop="20dp"
+                android:text="LOG IN" />
+            <Button
+                android:id="@+id/lg_register"
+                style="@style/button_simple"
+                android:text="@string/lg_register" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

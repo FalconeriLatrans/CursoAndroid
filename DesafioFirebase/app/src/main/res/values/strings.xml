@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DesafioFirebase</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="lg_remember">Remember</string>
+    <string name="lg_register">Create account</string>
+    <string name="name">Name</string>
+    <string name="rg_confirmCreateAccount">Create account</string>
+    <string name="confirmPassword">Repeate password</string>
+
+    <string name="error_empty_field">Field can\'t be empty</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_password_check">Invalid password confirmation</string>
+    <string name="search_games">Search Games</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_grayBg"
+    tools:context=".view.HqPortrait"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <ImageButton
+        android:backgroundTint="@color/black"
+        android:id="@+id/hp_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_close_24"
+        android:tint="@color/white"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_gravity="start"
+        android:layout_margin="20dp"/>
+    <LinearLayout
+        style="@style/hq_expanded"
+        android:padding="3dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/hp_image"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/cd_titleimage"/>
+    </LinearLayout>
+
+</LinearLayout>

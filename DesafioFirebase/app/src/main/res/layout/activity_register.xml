@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_green"
+    tools:context=".view.RegisterActivity">
+    <LinearLayout
+        android:id="@+id/rg_textfields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_text_box"
+        android:backgroundTint="@color/theme_red"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_text_box"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rg_name"
+                style="@style/lg_textInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/lg_textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    tools:text="DigitalHouse Brasil" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rg_email"
+                style="@style/lg_textInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email">
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/lg_textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    tools:text="dh@digitalhouse.com" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rg_password"
+                style="@style/lg_textInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/lg_textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    tools:text="password" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rg_comfirmPassword"
+                style="@style/lg_textInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirmPassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/lg_textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    tools:text="password" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/rg_save"
+                style="@style/button_std"
+                android:layout_marginTop="20dp"
+                android:text="@string/rg_confirmCreateAccount"
+                />
+        </LinearLayout>
+    </LinearLayout>
+ </RelativeLayout>
