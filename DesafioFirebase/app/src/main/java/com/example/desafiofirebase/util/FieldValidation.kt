@@ -8,7 +8,6 @@ class FieldValidation () {
     fun validateName(nameField: TextInputLayout): Boolean {
         return if (nameField.editText?.text?.isNotEmpty() == true){
             nameField.error = null
-
             true
         } else {
             nameField.error = nameField.context.getString(R.string.error_empty_field)

@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.desafiofirebase.R
 import com.example.desafiofirebase.util.Game
+import com.google.android.material.card.MaterialCardView
 
 class HomeAdapter(
     private val gameList: List<Game>,
@@ -21,7 +22,7 @@ class HomeAdapter(
         var gameImage = itemView.findViewById<ImageView>(R.id.card_image)
         var gameTitle = itemView.findViewById<TextView>(R.id.card_title)
         var gameDate = itemView.findViewById<TextView>(R.id.card_date)
-        var background = itemView.findViewById<LinearLayout>(R.id.card_background)
+        var background = itemView.findViewById<MaterialCardView>(R.id.card_background)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LocalViewHolder {
@@ -31,8 +32,8 @@ class HomeAdapter(
     override fun onBindViewHolder(holder: LocalViewHolder, position: Int) {
         Log.i("Tela 1", "Criando view ${position}")
         Glide.with(holder.itemView.context).load(gameList[position].thumbnail).into(holder.gameImage)
-        holder.gameTitle.text = "#${gameList[position].name}"
-        holder.gameDate.text = "#${gameList[position].created}"
+        holder.gameTitle.text = gameList[position].title
+        holder.gameDate.text = gameList[position].release
         holder.background.setOnClickListener {
             itemClicked(position)
         }

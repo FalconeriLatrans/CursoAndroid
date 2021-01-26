@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_grayBg"
+    android:orientation="vertical"
+    tools:context=".view.GameDetailActivity">
+
+    <ImageView
+        android:id="@+id/gameDetail_background"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/game_detail_bgexample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gameDetail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        tools:text="Mortal Kombat X"
+        android:shadowRadius="1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gameDetail_background"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/gameDetail_editButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp"
+        android:elevation="2dp"
+        android:background="@drawable/rounded_button"
+        android:paddingTop="-10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="40sp"
+        android:translationY="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gameDetail_background"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_edit" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameDetail_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@color/theme_grayBg"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/gameDetail_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="22dp"
+                    tools:text="Mortal Kombat X"
+                    android:textColor="@color/theme_black"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="@string/gameDetail_released"
+                        android:textColor="@color/theme_gray" />
+
+                    <TextView
+                        android:id="@+id/gameDetail_release"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="2018"
+                        android:textColor="@color/theme_gray"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/gameDetail_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="18dp"
+                    tools:text="Mortal Kombat é uma série de jogos criados pelo estúdio de Chicago da Midway Games. Em 2011, depois da falência da Midway, a produção de Mortal Kombat foi adquirida pela Warner Bros, tornando-se em seguida na Netherealm. A Warner detém actualmente os direitos da série. \n\n A produção do primeiro jogo foi baseada na ideia original que Ed Boon e John Tobias tinham em fazer um jogo em que participasse Jean-Claude Van Damme,[2] mas a ideia foi deixada de parte, e em vez disso foi criado Mortal Kombat, um jogo de luta com temas de fantasia e ciência, lançado em Outubro de 1992.[3] O jogo original, gerou muitas sequelas, vários jogos de acção-aventura, filmes (animados e live-action com a sua sequela) e séries de televisão (animadas e live-action). Outra média inclui banda desenhada, jogo de cartas e a Mortal Kombat: Live Tour, um teatro de artes marciais com personagens da série. "
+                    android:textColor="@color/theme_gray"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:alpha="0.2"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:backgroundTint="@color/black"
+        android:rotationY="12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/gameDetail_backbutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:tint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
